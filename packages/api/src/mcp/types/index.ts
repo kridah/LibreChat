@@ -153,8 +153,13 @@ export type ParsedServerConfig = MCPOptions & {
   tools?: string;
   toolFunctions?: LCAvailableTools;
   initDuration?: number;
-  lastUpdatedAt?: number;
+  updatedAt?: number;
   dbId?: string;
+};
+
+export type AddServerResult = {
+  serverName: string;
+  config: ParsedServerConfig;
 };
 
 export interface BasicConnectionOptions {
